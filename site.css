@@ -22,7 +22,6 @@ body {
 }
 
 header {
-    background: #f8f8f8;
     font-size: 2rem;
     position: fixed;
     left: 0;
@@ -30,6 +29,10 @@ header {
     padding: 0.5em 1em;
     box-shadow: 0 2px 4px -2px black;
     display: block;
+}
+
+header, footer {
+    background: #f8f8f8;
 }
 
 .name {
@@ -58,6 +61,10 @@ nav {
     margin-left: 0.25em;
 }
 
+a:webkit-any-link {
+    cursor: pointer;
+}
+
 main {
     min-height: 100vh;
     padding: 64px 24px 96px;
@@ -68,35 +75,19 @@ main {
 }
 
 h1 {
-    font-size: 2em;
+    display: block;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
-h1, h2 {
-    font-weight: 300;
-    font-family: 'Raleway', sans-serif;
-    display: block;
-}
-
 h2 {
-    font-size: 1.5em;
+    display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.quote {
-    font-family: 'Satisfy', cursive;
-    font-weight: 100;
-    color:  rgb(152, 101, 29);
-    text-shadow: 1px 1px 2px black;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 2em;
+    margin-inline-end: 0px
 }
 
 h3 {
@@ -105,7 +96,15 @@ h3 {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-size: 1.17em;
+}
+
+section {
+    display: block;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 p {
@@ -114,4 +113,30 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+footer {
+    box-sizing: border-box;
+    position: fixed;
+    height: 64px;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px -2px black;
+    display: block;
+}
+
+footer a {
+    margin-right: 64px;
+    text-decoration: none;
+}
+
+footer .media-link {
+    height: 32px;
+}
+
+footer a:last-child {
+    margin-right: 0;
 }

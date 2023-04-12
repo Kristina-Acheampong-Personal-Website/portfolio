@@ -8,12 +8,12 @@ h1, h2, section {
 }
 
 h2 {
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 section {
     border-top: 1px solid #bbb;
-    display: block;
 }
 
 section:nth-of-type(odd) >
@@ -30,9 +30,4 @@ img {
 
 section > img {
     height: 128px;
-}
-
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
